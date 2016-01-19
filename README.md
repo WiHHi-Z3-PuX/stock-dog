@@ -14,9 +14,11 @@ Running `grunt test` will run the unit tests with karma.
 
 
 some things changed in angular-strap and angular since the Professional
-AngularJS book was written, I made a few small changes, now the stocks
-are added and displayed properly
+AngularJS book by diego Netto and Valeri Carpov was written, I made a few small changes, now the stocks
+are added and displayed properly.
 
-in watchlist controller newStock.company is converted to a regular JSON object
-this prevents angular from adding it as an angular $resource, which breaks ng-repeat in the stock-table template
-in addstock-modal ng-options is replaced with bs-options
+in watchlist controller newStock is converted to a regular JSON object.
+this prevents angular from adding it as an angular $resource, which breaks ng-repeat in the stock-table template.
+in addstock-modal ng-options is replaced with bs-options (changes in angular strap).
+
+original repository: https://github.com/diegonetto/stock-dog

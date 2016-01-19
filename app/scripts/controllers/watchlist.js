@@ -24,13 +24,6 @@ angular.module('stockDogApp')
     };
 
     $scope.addStock = function () {
-        // workaround !!!!!!!!!
-        // var c = _.find($scope.companies, function(company){
-        //     return company.label === $scope.newStock.company;
-        // });
-
-        // console.log(c);
-
         // console.log($scope.newStock);
 
         $scope.newStock = JSON.parse(JSON.stringify($scope.newStock));
@@ -40,8 +33,6 @@ angular.module('stockDogApp')
     	$scope.watchlist.addStock({
     		listId: $routeParams.listId,
             company: $scope.newStock.company,
-    		// company: angular.toJson($scope.newStock.company),
-            // company: c,
     		shares: $scope.newStock.shares
     	});
     	addStockModal.hide();

@@ -22,6 +22,7 @@ angular.module('stockDogApp')
     			stock.percentChange = quote.ChangeinPercent;
     			stock.marketValue = stock.shares * stock.lastPrice;
     			stock.dayChange = stock.shares * parseFloat(stock.change);
+                stock.save();
     		});
     	}
     };
